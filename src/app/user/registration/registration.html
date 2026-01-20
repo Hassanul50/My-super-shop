@@ -1,0 +1,29 @@
+
+<form [formGroup]="regform" action="">
+    <div class="container card" style="width: 30rem; margin-top: 50px;">
+        <div class="card-body">
+      <h5 class="card-title text-bg-success text-center p-3">Registration Form</h5>
+    <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control bg-body-secondary" id="name" placeholder="name" formControlName="name">
+    </div>
+    <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control bg-body-secondary" id="email" placeholder="email" formControlName="email">
+    </div>
+    <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control bg-body-secondary" id="password" placeholder="password" formControlName="password">
+    </div>
+    <div class="mb-3">
+        <label for="confirm_password" class="form-label">Confirm Password</label>
+        <input type="password" class="form-control bg-body-secondary" id="confirm_password" placeholder="confirm password"  formControlName="confirm_password">
+    </div>
+    <div class="mb-3">
+        <label for="mobile" class="form-label">Mobile</label>
+        <input type="text" class="form-control bg-body-secondary" id="mobile" placeholder="mobile" formControlName="mobile">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</div>
+</form>
