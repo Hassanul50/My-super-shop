@@ -15,7 +15,7 @@ export class Registration {
     
   }
   myform(){
-     this.regform=this.registrationform.group({
+    this.regform=this.registrationform.group({
     name:[''],
     email:[''],
     password:[''],
@@ -25,4 +25,22 @@ export class Registration {
 
   }
 
+
+
+//#region form submit
+  onsubmit(){
+    console.log(this.regform.value);
+    if(this.regform.value.password==this.regform.value.confirm_password){
+      console.log("Form submitted successfully");
+    } else{
+      alert("Password and Confirm Password do not match");
+      // this.regform.reset();
+      // this.regform.value.confirm_password.reset() ;
+       this.regform.controls['confirm_password'].reset();
+      
+    } 
+    
+
+  } 
+  //#endregion
 }
